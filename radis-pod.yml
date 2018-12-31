@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: radis-app-pod
+  labels:
+    name: radis-app-pod
+    app: demo-voting-app
+spec:
+  containers:
+  - name: radis
+    image: radis
+    ports:
+      - containerPort: 6379
